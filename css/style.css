@@ -1,23 +1,28 @@
-/* Warm editorial cafe theme; Bootstrap 6 handles all layout. */
-:root { --bs-primary-base:#365343; --bs-primary-bg:#365343; --bs-primary-fg:#365343; --bs-primary-contrast:#fff; --bs-bg-body:#fcfaf6; --bs-fg-body:#26382e; }
-.theme-primary { --bs-theme-bg:#365343; --bs-theme-contrast:#fff; --bs-theme-fg:#365343; }
-.btn-solid.theme-primary { --bs-btn-bg:#365343; --bs-btn-color:#fff; --bs-btn-border-color:#365343; }
-body { background:#fcfaf6; color:#26382e; font-family:Arial,Helvetica,sans-serif; }
-h1,h2,h3,.navbar-brand { font-family:Georgia,'Times New Roman',serif; letter-spacing:-.035em; }
-h1 em { color:#66806a; }
-.navbar-brand,.nav-link { color:#263e32; }
-.nav-link.active { color:#365343; font-weight:700; text-decoration:underline; text-underline-offset:7px; }
-.brand-dot { color:#a57756; }
-.eyebrow { color:#7e6651; font-size:.75rem; font-weight:700; letter-spacing:.16em; }
-.section-soft { background:#f1eee5; }
-.card,.contact-panel { background:#fff; border:1px solid #e6e1d6; border-radius:20px; overflow:hidden; }
-.card-title { color:#2f4637; }
-.card-text { color:#5c655d; }
-.card-img-top { object-fit:cover; }
-summary { color:#365343; font-weight:700; cursor:pointer; }
-.form-control { background:#fffefa; border-color:#bfc9bd; }
-.dialog { border:1px solid #e3e0d6; border-radius:20px; max-width:480px; color:#26382e; background:#fffefa; }
-.dialog::backdrop { background:rgba(20,33,25,.68); }
-.footer-theme { background:#2f4637; color:#f9f6ed; }
-.footer-theme p { color:#f9f6ed; }
-.btn-solid.theme-primary:hover { background:#233d2e; color:white; }
+:root {
+    --bs-primary-base: #365343; --bs-primary-bg: #365343; --bs-primary-fg: #365343;
+    --bs-primary-contrast: #fff; --bs-bg-body: #fcfaf6; --bs-fg-body: #26382e;
+}
+.theme-primary {
+    --bs-theme-bg: #365343; --bs-theme-contrast: #fff; --bs-theme-fg: #365343;
+}
+.btn-solid.theme-primary {
+    --bs-btn-bg: #365343; --bs-btn-color: #fff; --bs-btn-border-color: #365343;
+}
+body { background: #fcfaf6; color: #26382e; font-family: Arial, Helvetica, sans-serif; }
+h1, h2, h3, .navbar-brand { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.035em; }
+h1 em { color: #66806a; }
+.navbar-brand, .nav-link { color: #263e32; }
+.nav-link.active { color: #365343; font-weight: 700; text-decoration: underline; text-underline-offset: 7px; }
+.brand-dot { color: #a57756; }
+.eyebrow { color: #7e6651; font-size: .75rem; font-weight: 700; letter-spacing: .16em; }
+.section-soft { background: #f1eee5; }
+.card, .contact-panel { background: #fff; border: 1px solid #e6e1d6; border-radius: 20px; overflow: hidden; }
+.card-title { color: #2f4637; }
+.card-text { color: #5c655d; }
+.card-img-top { object-fit: cover; }
+summary { color: #365343; font-weight: 700; cursor: pointer; }
+.form-control { background: #fffefa; border-color: #bfc9bd; }
+.dialog { border: 1px solid #e3e0d6; border-radius: 20px; max-width: 480px; color: #26382e; background: #fffefa; }
+.dialog::backdrop { background: rgba(20,33,25,.68); }
+.footer-theme, .footer-theme p { background: #2f4637; color: #f9f6ed; }
+.btn-solid.theme-primary:hover { background: #233d2e; color: #fff; }
