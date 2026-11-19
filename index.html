@@ -1,9 +1,827 @@
+
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | The Little Cup Café</title>
+
+    <meta name="description"
+          content="Discover handcrafted drinks, sweet treats and cozy moments at The Little Cup Café.">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
+    <header class="border-bottom bg-white">
 
-<h1> welcome </h1>
-<h2> this is my page</h2>
+        <nav class="navbar md:navbar-expand container py-3"
+             aria-label="Main navigation">
+
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                ✳ &nbsp;the little cup<span class="brand-dot">.</span>
+            </a>
+
+            <div class="navbar-nav d-none md:d-flex gap-4">
+
+                <a class="nav-link active"
+                   aria-current="page"
+                   href="index.html">
+                    Home
+                </a>
+
+                <a class="nav-link" href="index.html#menu">
+                    Our menu
+                </a>
+
+                <a class="nav-link" href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+            <button class="navbar-toggler md:d-none"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mobile-menu"
+                    onclick="document.getElementById('mobile-menu').showModal()">
+                ☰ Menu
+            </button>
+
+        </nav>
+
+        <dialog class="dialog"
+                id="mobile-menu"
+                aria-label="Mobile navigation">
+
+            <div class="p-4">
+
+                <button type="button"
+                        class="btn btn-solid theme-primary mb-4"
+                        onclick="this.closest('dialog').close()">
+                    ✕ Close menu
+                </button>
+
+                <nav aria-label="Mobile navigation">
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-3">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="index.html#menu">Our menu</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </dialog>
+
+    </header>
+
+
+    <main>
+
+        <section class="container py-5">
+
+            <div class="row g-4">
+
+                <div class="col-12">
+
+                    <p class="eyebrow mb-3">
+                        YOUR NEIGHBOURHOOD COFFEE CORNER
+                    </p>
+
+                    <h1 class="display-3 mb-4">
+                        Slow mornings.<br>
+                        <em>Sweet moments.</em>
+                    </h1>
+
+                    <p class="fs-5 mb-4">
+                        A little space to unwind, sip something lovely,
+                        and stay awhile. Made with love, served with warmth.
+                    </p>
+
+                    <a href="#menu"
+                       class="btn btn-solid theme-primary rounded-pill px-4 py-3">
+                        Explore our menu ↗
+                    </a>
+
+                    <a href="contact.html"
+                       class="btn btn-outline theme-primary rounded-pill px-4 py-3">
+                        Say hello
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="section-soft py-5">
+
+            <div class="container">
+
+                <p class="eyebrow mb-2">
+                    TAKE A LITTLE LOOK AROUND
+                </p>
+
+                <h2 class="display-6 mb-4">
+                    The little things, beautifully made.
+                </h2>
+
+                <div class="carousel"
+                     id="cafe-carousel"
+                     aria-label="Featured café favourites">
+
+                    <div class="carousel-inner">
+
+                    
+                        <div class="carousel-item active" data-slide="0">
+
+                            <img class="w-100 rounded-4"
+                                 width="1280"
+                                 height="800"
+                                 src="images/hero.jpg"
+                                 alt="Latte, iced matcha and fresh croissant on a sunlit café table">
+
+                            <div class="py-4">
+
+                                <p class="eyebrow mb-2">
+                                    THE LITTLE CUP EXPERIENCE · 01
+                                </p>
+
+                                <h2 class="h3 mb-2">
+                                    Coffee, made for the moments that matter.
+                                </h2>
+
+                                <p class="mb-0">
+                                    A cozy corner for good company,
+                                    beautiful drinks and something sweet.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                
+                        <div class="carousel-item"
+                             data-slide="1"
+                             hidden>
+
+                            <img class="w-100 rounded-4"
+                                 width="1280"
+                                 height="800"
+                                 src="images/slide-2.jpg"
+                                 alt="Iced green matcha latte with vanilla on a sunlit table">
+
+                            <div class="py-4">
+
+                                <p class="eyebrow mb-2">
+                                    THE LITTLE CUP EXPERIENCE · 02
+                                </p>
+
+                                <h2 class="h3 mb-2">
+                                    A matcha moment, just for you.
+                                </h2>
+
+                                <p class="mb-0">
+                                    Creamy, refreshing and made to
+                                    brighten your afternoon.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="carousel-item"
+                             data-slide="2"
+                             hidden>
+
+                            <img class="w-100 rounded-4"
+                                 width="1280"
+                                 height="800"
+                                 src="images/slide-3.jpg"
+                                 alt="Strawberry cream drink with fresh berries in warm sunlight">
+
+                            <div class="py-4">
+
+                                <p class="eyebrow mb-2">
+                                    THE LITTLE CUP EXPERIENCE · 03
+                                </p>
+
+                                <h2 class="h3 mb-2">
+                                    Your sweet escape starts here.
+                                </h2>
+
+                                <p class="mb-0">
+                                    A little treat can make an ordinary
+                                    day feel special.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="mt-2">
+
+                        <button type="button"
+                                class="btn btn-solid theme-primary rounded-pill px-4"
+                                aria-label="Previous slide"
+                                data-bs-target="#cafe-carousel"
+                                onclick="moveSlide(-1)">
+                            ← Previous
+                        </button>
+
+                        <button type="button"
+                                class="btn btn-solid theme-primary rounded-pill px-4"
+                                aria-label="Next slide"
+                                data-bs-target="#cafe-carousel"
+                                onclick="moveSlide(1)">
+                            Next →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container py-5"
+                 id="menu"
+                 aria-labelledby="menu-heading">
+
+            <p class="eyebrow mb-2">
+                MADE WITH CARE, SERVED WITH LOVE
+            </p>
+
+            <h2 class="display-5 mb-3" id="menu-heading">
+                Something for every craving.
+            </h2>
+
+            <p class="fs-5 mb-5">
+                Handcrafted sips and fresh-baked favourites
+                to make your day a little sweeter.
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/lavender.jpg"
+                             width="720"
+                             height="570"
+                             alt="Honey Lavender Latte served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 01
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Honey Lavender Latte
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                A floral twist on your everyday coffee.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Velvety espresso, steamed milk,
+                                    honey and a hint of lavender.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-1"
+                                    onclick="document.getElementById('item-dialog-1').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-1"
+                            aria-labelledby="dialog-title-1">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-1" class="h3 mb-3">
+                                Honey Lavender Latte
+                            </h3>
+
+                            <p>
+                                A comforting, delicately sweet latte
+                                with soft floral notes.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/matcha.jpg"
+                             width="720"
+                             height="570"
+                             alt="Iced Vanilla Matcha served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 02
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Iced Vanilla Matcha
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                A little green goodness, poured over ice.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Ceremonial-style matcha, creamy milk
+                                    and a smooth vanilla finish.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-2"
+                                    onclick="document.getElementById('item-dialog-2').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-2"
+                            aria-labelledby="dialog-title-2">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-2" class="h3 mb-3">
+                                Iced Vanilla Matcha
+                            </h3>
+
+                            <p>
+                                A refreshing pick-me-up for slow afternoons.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/cookie.jpg"
+                             width="720"
+                             height="570"
+                             alt="Brown Butter Cookie served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 03
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Brown Butter Cookie
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                Golden edges, a soft centre, pure comfort.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Baked with nutty brown butter,
+                                    chocolate chunks and a sprinkle of sea salt.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-3"
+                                    onclick="document.getElementById('item-dialog-3').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-3"
+                            aria-labelledby="dialog-title-3">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-3" class="h3 mb-3">
+                                Brown Butter Cookie
+                            </h3>
+
+                            <p>
+                                Best enjoyed warm alongside your favourite latte.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/strawberry.jpg"
+                             width="720"
+                             height="570"
+                             alt="Strawberry Cloud served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 04
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Strawberry Cloud
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                Bright berries with a dreamy, creamy finish.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Sparkling strawberry, vanilla cream
+                                    and fresh berry flavour.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-4"
+                                    onclick="document.getElementById('item-dialog-4').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-4"
+                            aria-labelledby="dialog-title-4">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-4" class="h3 mb-3">
+                                Strawberry Cloud
+                            </h3>
+
+                            <p>
+                                A sweet and refreshing treat for sunny days.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/cinnamon.jpg"
+                             width="720"
+                             height="570"
+                             alt="Cinnamon Oat Cappuccino served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 05
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Cinnamon Oat Cappuccino
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                Warm spice meets a perfectly foamy cup.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Rich espresso, airy oat milk
+                                    and a dusting of cinnamon.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-5"
+                                    onclick="document.getElementById('item-dialog-5').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-5"
+                            aria-labelledby="dialog-title-5">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-5" class="h3 mb-3">
+                                Cinnamon Oat Cappuccino
+                            </h3>
+
+                            <p>
+                                A cozy dairy-free favourite with a gentle spice.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+                <div class="col-12 md:col-6 lg:col-4">
+
+                    <article class="card h-100 shadow-sm">
+
+                        <img class="card-img-top"
+                             src="images/lemon.jpg"
+                             width="720"
+                             height="570"
+                             alt="Lemon Poppy Loaf served on a warm café table">
+
+                        <div class="card-body p-4">
+
+                            <p class="eyebrow mb-2">
+                                CAFÉ FAVOURITE · 06
+                            </p>
+
+                            <h3 class="card-title h4 mb-3">
+                                Lemon Poppy Loaf
+                            </h3>
+
+                            <p class="card-text mb-3">
+                                A slice of sunshine with your afternoon tea.
+                            </p>
+
+                            <details class="mb-4">
+
+                                <summary>What's inside</summary>
+
+                                <p class="mt-2 mb-0">
+                                    Soft lemon loaf, poppy seeds
+                                    and a light citrus glaze.
+                                </p>
+
+                            </details>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4"
+                                    type="button"
+                                    data-bs-target="#item-dialog-6"
+                                    onclick="document.getElementById('item-dialog-6').showModal()">
+                                Discover more ↗
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                    <dialog class="dialog"
+                            id="item-dialog-6"
+                            aria-labelledby="dialog-title-6">
+
+                        <div class="p-4">
+
+                            <p class="eyebrow">FROM OUR MENU</p>
+
+                            <h3 id="dialog-title-6" class="h3 mb-3">
+                                Lemon Poppy Loaf
+                            </h3>
+
+                            <p>
+                                Bright, tender and baked for a little afternoon joy.
+                            </p>
+
+                            <button class="btn btn-solid theme-primary rounded-pill px-4 mt-3"
+                                    type="button"
+                                    onclick="this.closest('dialog').close()">
+                                Close
+                            </button>
+
+                        </div>
+
+                    </dialog>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container py-5">
+
+            <div class="section-soft rounded-4 p-5">
+
+                <p class="eyebrow">
+                    COME AS YOU ARE
+                </p>
+
+                <h2 class="display-6 mb-3">
+                    Your favourite part of the day is waiting.
+                </h2>
+
+                <p class="mb-4">
+                    Whether it's a coffee break or a catch-up,
+                    there's always room for you here.
+                </p>
+
+                <a class="btn btn-solid theme-primary rounded-pill px-4"
+                   href="contact.html">
+                    Get in touch ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer-theme py-5 mt-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6">
+
+                    <p class="h3 mb-2">
+                        ✳ the little cup.
+                    </p>
+
+                    <p class="mb-0">
+                        Coffee, comfort &amp; a little everyday magic.
+                    </p>
+
+                </div>
+
+                <div class="col-12 md:col-6">
+
+                    <p class="mb-1">
+                        A student café concept · CCT360 Lab 6
+                    </p>
+
+                    <p class="mb-0">
+                        © 2026 The Little Cup Café
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const slides = [
+            ...document.querySelectorAll('[data-slide]')
+        ];
+
+        let current = 0;
+
+        function moveSlide(step) {
+
+            slides[current].hidden = true;
+            slides[current].classList.remove('active');
+
+            current = (current + step + slides.length) % slides.length;
+
+            slides[current].hidden = false;
+            slides[current].classList.add('active');
+
+        }
+    </script>
+
 </body>
+
 </html>
